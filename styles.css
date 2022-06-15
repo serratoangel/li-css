@@ -1,7 +1,15 @@
 /*
 CSS Reset Stylesheet
+Styles guide
+0. RESET
+1. LAYOUT
+2. GENERIC ITEMS
+3. LIST
+4. FORM
+5. MEDIA QUERY
 */
 
+/* ----- 0. RESET ----- */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -137,3 +145,49 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+/* ----- 1. LAYOUT ----- */
+body {
+    text-align: center;
+    font: 1rem/1 "Roboto";
+    background: #ebf2e3;
+}
+
+.wrapper {
+    width: 900px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.flex {
+    display: flex;
+}
+
+.navbar {
+    justify-content: space-between;
+}
+
+.navbar nav {
+    align-items: flex-end;
+}
+
+.content .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background: #ccc;
+    height: 350px;
+    padding: 20px;
+}
+
+.content .about .item.title,
+.content .portfolio .item.title {
+    justify-content: flex-start;
+}
+
+.content .creation .item.title {
+    justify-content: flex-end;
+}
+
+/* ----- 1. GENERIC ITEMS ----- */
