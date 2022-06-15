@@ -190,7 +190,7 @@ body {
     justify-content: flex-end;
 }
 
-/* ----- 1. GENERIC ITEMS ----- */
+/* ----- 3. GENERIC ITEMS ----- */
 .navbar {
     margin-left: 10px;
 }
@@ -342,4 +342,43 @@ body {
 
 .contact .title {
     background: #d54100;
+}
+
+/* ----- 3. LIST ----- */
+.portfolio li {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.portfolio a {
+    color: #008bda;
+    text-decoration: none;
+}
+
+/* ----- 4. FORM ----- */
+.contact form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+}
+
+.contact input {
+    border: 0;
+    background: #fff;
+    display: block;
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.contact [type="submit"] {
+    width: auto;
+    height: auto;
+    padding: 5px 15px;
+    border: 2px solid #fff;
+    background: none;
+    color: #fff;
+    font-size: 16px;
 }
